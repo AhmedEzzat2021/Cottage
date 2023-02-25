@@ -5,13 +5,18 @@ export const ReviewStyle = styled.div`
   padding-top: 8rem;
   background-color: #f5f5f5;
   .review_details {
-    padding-left: 0;
-    padding-right: 2rem;
     .sub_title {
       color: #9aa2b1;
     }
 
     .user_srvShipping {
+      .user_profile {
+        @media (max-width: 767px) {
+          flex-direction: column;
+          gap: 15px;
+          align-items: flex-start !important;
+        }
+      }
       .image_profile {
         width: 70px;
         height: 70px;
@@ -27,6 +32,12 @@ export const ReviewStyle = styled.div`
       }
       .edit_btn {
         background-color: #f4f6f8;
+      }
+      @media (max-width: 767px) {
+        .info___ {
+          flex-direction: column;
+          gap: 15px;
+        }
       }
     }
     label {

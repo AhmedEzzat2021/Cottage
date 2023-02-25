@@ -33,8 +33,8 @@ export const ServiceStyle = styled.div`
   }
   .item_:first-child {
     img {
-      width: 50px;
-      background-color: red;
+      width: 80px;
+      background-color: #4a3e4c;
       @media (max-width: 767px) {
         width: 100px;
       }

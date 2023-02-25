@@ -7,11 +7,11 @@ const ShippService = ({ title, subTitle, currency, imageService, id, labelFor })
         <label className="d-flex justify-content-between align-items-center w-100 item_" htmlFor={labelFor}>
           <div className="d-flex align-items-start gap-4">
             <div className="title_serv">
-              <p className="text_ fw-bold">{title}</p>
+              <p className="text_ fw-medium">{title}</p>
               <span className="sub_">{subTitle}</span>
             </div>
           </div>
-          <div className="Currency d-flex justify-content-start align-items-center fw-bold ">
+          <div className="Currency d-flex justify-content-start align-items-center fw-medium ">
             <div className="ico_currn">
               <span>$</span>
             </div>

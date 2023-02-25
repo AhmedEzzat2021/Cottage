@@ -38,4 +38,11 @@ export const StyleCardRecom = styled.div`
       color: #4a3e4c;
     }
   }
+  .heading {
+    h4 {
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+    }
+  }
 `;

@@ -3,6 +3,9 @@ import styled from "styled-components";
 export const StyleShCart = styled.div`
   min-height: 100vh;
   padding-top: 4.3rem;
+  @media (max-width: 991px) {
+    padding-top: 10rem;
+  }
   .head_page {
     background-color: RGBA(74, 62, 76, 0.1);
     .container {
@@ -10,7 +13,6 @@ export const StyleShCart = styled.div`
     }
   }
   .list_prods {
-    padding-left: 0;
     padding-right: 1rem;
   }
   .free_deliv {
@@ -40,18 +42,7 @@ export const StyleShCart = styled.div`
       }
     }
   }
-  .side_info_price {
-    li {
-      color: #545454;
-      font-size: 19px;
-    }
-    .val_discount {
-      color: #fa3434;
-    }
-    .val_tax {
-      color: #00b517;
-    }
-  }
+
   .checkOut-btn {
     .btn {
       background-color: #4a3e4c;

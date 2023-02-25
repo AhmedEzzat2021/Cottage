@@ -28,7 +28,7 @@ const ShipingPayment = () => {
       <div className="container body_page">
         <div className="row pb-5">
           <div className="col-sm-12 col-lg-8 shipping_serv">
-            <div className="bg-white mb-5 shadow-sm rounded-3 p-3 pt-4">
+            <div className="bg-white mb-5 def_shadow rounded-3 p-3 pt-4">
               <h4 className="fw-semibold title_sid">Choose Shipping Service</h4>
               <p className="sub_title">You can choose one best shipping service accross your needs.</p>
 
@@ -235,16 +235,12 @@ const ShipingPayment = () => {
               </form>
             </div>
           </div>
-          <div className="col-sm-12 col-lg-4 mt-4">
-            <div className=" bg-white pt-4 shadow-sm rounded-3  side_summary ">
+          <div className="col-sm-12 col-lg-4">
+            <div className=" bg-white pt-4 def_shadow rounded-3  side_summary ">
               <h4 className="px-3 title_side">Order Summary</h4>
               <ListCardsSummary />
               <hr className="w-100" />
               <DataSummary />
-              <p className="d-flex justify-content-between align-items-center pb-3 px-3 fw-bold">
-                <span>Order Total</span>
-                <span>$1,610.00</span>
-              </p>
             </div>
             <div className="L-routes mt-4">
               <Link to="/review" className="btn w-100 _review mb-2">

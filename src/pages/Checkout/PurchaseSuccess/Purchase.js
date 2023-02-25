@@ -26,7 +26,7 @@ const Purchase = () => {
             <br />
             <span>You will be receiving an email shortly with invoice from your order.</span>
           </p>
-          <div className="routes_pursh d-flex justify-content-center align-items-center mt-4">
+          <div className="routes_pursh d-flex justify-content-center align-items-center mt-4 flex-wrap-reverse">
             <div className="b_t_shop">
               <IoIosArrowBack />
               <Link to="/cottage" className="px-1">

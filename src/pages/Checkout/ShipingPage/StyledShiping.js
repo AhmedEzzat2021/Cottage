@@ -8,7 +8,6 @@ export const ShipingPaymentStyle = styled.div`
   }
   .body_page {
     .shipping_serv {
-      padding-left: 0;
       padding-right: 2rem;
 
       .title_sid .sub_title {
@@ -30,6 +29,9 @@ export const ShipingPaymentStyle = styled.div`
       height: fit-content;
       .title_side {
         font: 21px;
+      }
+      @media (max-width: 991px) {
+        margin-top: 15px;
       }
     }
   }

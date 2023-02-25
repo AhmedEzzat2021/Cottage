@@ -4,6 +4,9 @@ export const TrackStyle = styled.div`
   min-height: 100vh;
   padding-top: 8rem;
   background-color: #f5f5f5;
+  @media (max-width: 767px) {
+    padding-top: 14rem;
+  }
   .list_icons {
     display: flex;
     justify-content: space-around;

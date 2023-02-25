@@ -2,10 +2,7 @@ import styled from "styled-components";
 
 export const StyleProg = styled.div`
   .container {
-    background-color: #fff;
-    border-radius: 10px;
     margin-bottom: 2rem;
-
     .cont_step {
       @media (max-width: 767px) {
         .step {

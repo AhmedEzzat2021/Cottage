@@ -24,14 +24,14 @@ const Review = () => {
 
       <div className="container body_page">
         <div className="row pb-5">
-          <div className="col-8 review_details">
+          <div className="col-sm-12 col-lg-8 review_details">
             <div className="bg-white mb-3 shadow-sm rounded-3 p-3 pt-4">
               <h4 className="fw-semibold">Shipping to…</h4>
               <p className="sub_title">Please check berofe you finalize your order</p>
 
-              <div className="user_srvShipping mt-5 d-flex justify-content-between align-items-center border-bottom pb-4">
+              <div className="user_srvShipping mt-5 d-flex justify-content-between align-items-center  border-bottom pb-4">
                 <div className="user_profile d-flex justify-content-between align-items-center w-100">
-                  <div className="d-flex">
+                  <div className="info___ d-flex">
                     <div className="image_profile">
                       <img src={prfofileImg} alt="imageProfile shadow-sm" />
                     </div>
@@ -71,7 +71,7 @@ const Review = () => {
                 <h4 className="fw-semibold">Payment method</h4>
                 <button className="btn fw-semibold change_meth">Change method</button>
               </div>
-              <div className="info_method d-flex align-items-center justify-content-between rounded-3 p-4">
+              <div className="info_method d-flex align-items-center justify-content-between rounded-3 p-4 flex-wrap gap-2">
                 <div className="details_card d-flex align-items-center gap-4">
                   <div className="image_cardPay">
                     <img src={cardPay} alt="card" />
@@ -96,14 +96,15 @@ const Review = () => {
               </>
             </div>
           </div>
-          <div className="col-4 px-0">
+
+          <div className="col-sm-12 col-lg-4">
             <div className=" bg-white pt-4 shadow-sm rounded-3 ">
               <h4 className="fs-5 px-3 pb-3">Order Summary</h4>
               <DataSummary />
               <div className="px-3">
                 <div className="applied d-flex justify-content-between align-items-center rounded-3">
                   <span className="fw-semibold text-capitalize px-2">ELMA50</span>
-                  <span className="apply rounded-3">Applied</span>
+                  <span className="apply rounded-3 fw-medium">Applied</span>
                 </div>
                 <hr className="w-100 line_" />
               </div>

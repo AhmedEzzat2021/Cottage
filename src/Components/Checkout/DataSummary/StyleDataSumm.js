@@ -1,10 +1,13 @@
 import styled from "styled-components";
 
-export const DataSummstyle = styled.div`
-  .title {
-    color: #9aa2b1;
+export const DataSummstyle = styled.ul`
+  li {
+    color: #545454;
   }
-  .discount {
-    color: #de3618;
+  .val_discount {
+    color: #fa3434;
+  }
+  .val_tax {
+    color: #00b517;
   }
 `;

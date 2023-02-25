@@ -4,9 +4,9 @@ import imgCart from "../../../assets/Images/shirt.png";
 import { StyleProd } from "./StyleProdCart";
 const ProductCart = () => {
   return (
-    <StyleProd className="d-flex justify-content-between align-items-start border-bottom pb-4 mb-4">
-      <div className="d-flex justify-content-start align-items-start gap-3">
-        <div className="image_prod border border-1 p-3 rounded-3">
+    <StyleProd className="d-flex justify-content-between align-items-start flex-wrap border-bottom pb-4 mb-4">
+      <div className="d-flex justify-content-start align-items-start gap-3 mb-3 inf_prod">
+        <div className="image_prod border border-1 p-3 rounded-3 ">
           <img src={imgCart} alt="product" />
         </div>
         <div className="txt_product d-flex flex-column">
@@ -14,7 +14,7 @@ const ProductCart = () => {
           <p className="info">Size: Medium, Color: Blue</p>
         </div>
       </div>
-      <div className="qty d-flex justify-content-center align-items-center gap-3 ">
+      <div className="qty d-flex justify-content-center align-items-center gap-3 mb-3">
         <select className="form-control form-select shadow-sm">
           <option>1</option>
           <option>2</option>
@@ -26,7 +26,7 @@ const ProductCart = () => {
           <p className="per_item">20$ / per item</p>
         </div>
       </div>
-      <div className="fav_delet d-flex gap-2">
+      <div className="fav_delet d-flex gap-2 mb-3">
         <span className="btn shadow-sm btn_fav">
           <FiHeart />
         </span>

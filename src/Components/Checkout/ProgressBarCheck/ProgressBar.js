@@ -6,7 +6,7 @@ const ProgressBar = () => {
   return (
     <StyleProg>
       <div className="container">
-        <div className="d-flex justify-content-start align-items-center px-2 py-3 cont_step flex-wrap ">
+        <div className="bg-white rounded-2 d-flex justify-content-start align-items-center px-3 py-3 cont_step flex-wrap def_shadow">
           <div className="step cart_prog active_step">
             <BsCheckSquareFill className="checkRight" />
             <span>Cart</span>

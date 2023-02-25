@@ -1,10 +1,25 @@
 import styled from "styled-components";
 
 export const StyleProd = styled.li`
+  @media (max-width: 767px) {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center;
+  }
+  .inf_prod {
+    @media (max-width: 767px) {
+      flex-direction: column;
+      align-items: center !important;
+    }
+  }
   .image_prod {
     width: 100px;
     img {
       width: 100%;
+    }
+    @media (max-width: 767px) {
+      width: 200px;
     }
   }
   .txt_product {

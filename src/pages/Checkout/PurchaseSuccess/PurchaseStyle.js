@@ -39,7 +39,11 @@ export const StylePursh = styled.div`
     .num_order {
       color: #000;
     }
+
     color: gray;
+    @media (max-width: 991px) {
+      width: 100% !important;
+    }
   }
   .routes_pursh {
     .b_t_shop {
@@ -73,6 +77,12 @@ export const StylePursh = styled.div`
   .our_feature {
     padding-top: 8rem !important;
     padding-bottom: 5rem !important;
+  }
+  @media (max-width: 991px) {
+    padding-top: 13rem;
+    .txt_purshP {
+      width: 100% !important;
+    }
   }
 `;
 //#47C1BF background icon

@@ -9,6 +9,9 @@ export const StyleSeller = styled.div`
   .seller_info {
     margin-top: -100px;
     padding-left: 10rem;
+    @media (max-width: 991px) {
+      padding-left: 5rem;
+    }
   }
 
   .section_categories {

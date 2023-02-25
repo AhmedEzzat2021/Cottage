@@ -19,4 +19,10 @@ export const ItemStyle = styled.li`
     height: 2.2rem;
     width: 2.2rem;
   }
+  @media (max-width: 767px) {
+    flex-direction: column;
+    gap: 15px;
+    border-bottom: 1px solid #9aa2b1;
+    padding-bottom: 15px;
+  }
 `;

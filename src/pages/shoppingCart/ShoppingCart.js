@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ProductCart from "./../../Components/Cart/productCart/ProductCart";
+import DataSummary from "./../../Components/Checkout/DataSummary/DataSummary";
 import RecomendItems from "./../../Components/RecommendedItems/RecomendItems";
 import { StyleShCart } from "./StyleShopCart";
 
@@ -15,7 +16,7 @@ const ShoppingCart = () => {
         </div>
         <div className="container">
           <div className="row">
-            <div className="col-9 list_prods">
+            <div className="col-sm-12 col-lg-9 list_prods">
               <div className="bg-white mb-5 rounded-3 p-4 def_shadow">
                 <ul className="list_products">
                   <ProductCart />
@@ -35,7 +36,7 @@ const ShoppingCart = () => {
             </div>
 
             {/* side content */}
-            <div className="col-3 px-0">
+            <div className="col-sm-12 col-lg-3">
               <div className=" bg-white p-3 def_shadow rounded-3 mb-3 ">
                 <div className="coupon">
                   <label className="pb-1">Have a coupon?</label>
@@ -53,30 +54,17 @@ const ShoppingCart = () => {
                   </div>
                 </div>
               </div>
-              <ul className=" bg-white p-3 def_shadow rounded-3 side_info_price">
-                <li className="d-flex justify-content-between align-items-center mb-2">
-                  <span>Total price:</span>
-                  <span>$1403.97</span>
-                </li>
-                <li className="d-flex justify-content-between align-items-center mb-2">
-                  <span>Discount:</span>
-                  <span className="val_discount">- $60.00</span>
-                </li>
-                <li className="d-flex justify-content-between align-items-center mb-2 border-bottom pb-3">
-                  <span>Tax</span>
-                  <span className="val_tax">+ $14.00</span>
-                </li>
-                <li className="d-flex justify-content-between align-items-center mb-2">
-                  <span>Total:</span>
-                  <span className="fw-medium">$1357.97</span>
-                </li>
-                <Link to="/shipping&payment" className="checkOut-btn w-100 mt-2">
-                  <button className="btn w-100 fw-medium">Checkout</button>
-                </Link>
-                <li className="route_to_shpop w-100 mt-2">
-                  <button className="btn w-100 border fw-medium">Back to shop</button>
-                </li>
-              </ul>
+              <div className="bg-white def_shadow rounded-3">
+                <DataSummary />
+                <div className="p-3">
+                  <Link to="/shipping&payment" className="checkOut-btn w-100">
+                    <button className="btn w-100 fw-medium mb-2">Checkout</button>
+                  </Link>
+                  <Link to="/cottage" className="route_to_shpop w-100 ">
+                    <button className="btn w-100 border fw-medium">Back to shop</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
