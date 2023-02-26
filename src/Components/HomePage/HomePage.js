@@ -1,5 +1,6 @@
 import "animate.css";
-import React from "react";
+import axios from "axios";
+import React, { useEffect } from "react";
 
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import cam from "../../assets/Images/cam.png";
@@ -16,6 +17,16 @@ import TitleSection from "../ReusableComponent/title&subtitle&btnSeeAll/TitleSec
 import { CategoryStyle, FlashSleSection, Header, LatestView } from "./styledHome/HomePageStyled";
 
 function HomePage({ toggleSidebar, sidebar }) {
+  useEffect(() => {
+    axios
+      .get(
+        `https://api.postman.com/collections/5596443-eb16a754-5167-4cab-a92a-b277902f83db?access_key=PMAT-01GSWFS6QH9DSR7ZXWWERPG21J`
+      )
+      .then(res => {
+        console.log(res.data.collection.item);
+      });
+  }, []);
+
   return (
     <>
       <Header>

@@ -3,79 +3,25 @@ import ProdctCrd from "./../../../Components/ReusableComponent/CardProduct/CardP
 
 const WishList = () => {
   return (
-    <div className="row">
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
-      <ProdctCrd>
-        <div className="text_price pt-3 pb-2 border-top p-2">
-          <p className="price fw-semibold">$99.50</p>
-          <span className="descrp">Gaming Headset 32db Black built in mic</span>
-          <div className="foot_card d-flex justify-content-start align-items-center gap-2 mb-2">
-            <button className="btn">Add to cart</button>
-          </div>
-        </div>
-      </ProdctCrd>
+    <div className="row bg-white pt-4 rounded">
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
+      <div className="col-sm-12 col-md-6 col-lg-4">
+        <ProdctCrd addToCard={true} />
+      </div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import imageCategory from "../../assets/Images/categoryImage.png";
-import CoverImg from "../../assets/Images/cover_photo.jpg";
-import ProfileImage from "../../assets/Images/profile_photo.jpg";
+import CoverImg from "../../assets/Images/cover_photo.webp";
+import ProfileImage from "../../assets/Images/profile_photo_1.webp";
 import ProdctCrd from "./../../Components/ReusableComponent/CardProduct/CardProduct";
 import SideFiltring from "./../../Components/SideFiltering/SideFiltring";
 import { StyleSeller } from "./Style";

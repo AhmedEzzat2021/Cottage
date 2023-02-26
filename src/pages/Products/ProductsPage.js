@@ -24,10 +24,10 @@ const ProductsPage = () => {
       </Breadcrmb>
       <div className="container pt-3">
         <div className="row">
-          <div className="col-3 mb-4">
+          <div className="col-sm-12 col-lg-3 mb-4">
             <SideFiltring />
           </div>
-          <div className="col-9 mb-3">
+          <div className="col-sm-12 col-lg-9 mb-3">
             {/* Header of filtring products and sort */}
             <div className="header_filter d-flex justify-content-between align-items-center">
               <span>60 styles found</span>
